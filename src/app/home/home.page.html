@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <!-- <ion-item class="ion-no-padding" lines="none">
+      <ion-label>Awesome Label</ion-label>
+    </ion-item>
+
+     -->
+     <div>
+       <ion-item slot="start" class="header-logo ion-no-padding" lines="none">
+         <ion-button size="normal" shape="round">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <ion-label>Code center</ion-label>
+         </ion-button>
+       </ion-item>
+   
+       <ion-item slot="end" class="ion-no-padding" lines="none">
+         <ion-button size="normal" fill="solid">
+           <ion-label>Log in</ion-label>
+         </ion-button>
+     
+         <ion-button size="normal" fill="solid" color="light">
+           <ion-label>Sign Up</ion-label>
+         </ion-button>
+       </ion-item>
+      </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="login-container ion-no-padding">
+    <ion-row color="medium">
+      <ion-col class="login-info ion-no-padding" size="6">
+        <div class="login-text">
+          <h1>Work hard, become a Programmer</h1>
+          <div *ngFor="let icon of icons">
+            <ion-icon name="{{ icon }}"></ion-icon>
+            <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col class="login-form ion-no-padding" size="6">
+        <form>
+
+          <ion-item class="login-input ion-no-padding" lines="none">
+            <div class="login-input-content">
+              <div class="login-input-label">
+                <ion-label>Email</ion-label>
+              </div>
+              <ion-input type="email"></ion-input>
+            </div>
+          </ion-item>
+
+          <ion-item class="login-input ion-no-padding" lines="none">
+            <div class="login-input-content">
+              <div class="login-input-label">
+                <label>Password</label>
+                <label class="login-forgot-password">Forgot password ?</label>
+              </div>
+              <ion-input type="password"></ion-input>
+            </div>
+          </ion-item>
+
+          <div class="login-singup-platforms">
+            <ion-button expand="block" fill="solid">
+              Log in
+            </ion-button>
+  
+            <p>Don't have an account? <span>Sign up</span></p>
+            <p>or</p>
+           
+            <ion-button expand="block" fill="outline" color="medium">
+              Log in with Google
+            </ion-button>
+  
+            <ion-button expand="block" fill="outline" color="medium">
+              Log in with Github
+            </ion-button>
+          </div>
+
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

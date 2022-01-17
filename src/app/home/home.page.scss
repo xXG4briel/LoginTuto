@@ -1,0 +1,133 @@
+ion-button  {
+    text-transform: none;
+}
+
+ion-header {
+    ion-toolbar {
+        height: 70px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 95%;
+            height: 70px;
+            margin: 0 auto;
+            ion-item {
+                --background: none;
+                ion-button {
+                    margin: 0 20px;
+                    --box-shadow: none;
+                }
+            }
+            .header-logo {
+                // cursor: pointer;
+                ion-icon  {
+                    margin: 0 10px;
+                }
+                ion-icon, ion-label {
+                    color:  white;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+ion-content {
+    .login-container {
+        height: 100%;
+        ion-row {
+            height: 100%;
+            .login-info, .login-form {
+                height: 100%;
+            }
+            // .login-info .login-text, .login-form form {
+            //     margin: 15% auto 0;
+            // }
+            .login-info {
+                background: #EEEDED;
+                .login-text {
+                    margin: 15% 100px 0 auto;
+                    // margin-top: 15%;
+                    max-width: 734px;
+                    text-align: end;
+                    h1 {
+                        font-size: 48px;
+                        margin: 0 0 0;
+                    }
+                    div {
+                        margin: 10px 0 0 ;
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        font-size: 32px;
+                        transition: .4s  ease;
+                        ion-icon {
+                            margin-right: 10px;
+                        }
+                        h3 {
+                            font-weight: normal;
+                        }
+                    }
+                    div:hover {
+                        color: var(--ion-color-primary);
+                        transform: translateY(-5px);
+                        // h3, ion-icon {
+                        // }
+                    }
+                }
+            }
+            .login-form {
+                form {
+                    margin: 15% auto 0  100px;
+                    max-width: 300px;
+                    .login-input {
+                        --inner-padding-end: 0;
+                        .login-input-content {
+                            width:100%;
+                            ion-label {
+                                font-family: Nunito, sans-serif;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 22px;
+                                color: #22293B;
+                            }
+                            .login-input-label {
+                                margin-bottom: 8px;
+                                display: flex;
+                                justify-content: space-between;
+                                .login-forgot-password {
+                                    cursor: pointer;
+                                    font-weight: 600;
+                                    color: var(--ion-color-primary);
+                                }
+                            }
+                            ion-input {
+                                border: 1px solid var(--ion-color-medium);
+                                border-radius: 4px;
+                            }
+                        }
+                    }
+                    .login-singup-platforms {
+                        p {
+                            text-align: center;
+                            margin: 0;
+                            span {
+                                cursor: pointer;
+                                color: var(--ion-color-primary);
+                                font-weight: 600;
+                            }
+                        }
+                        p:first-of-type  {
+                            margin: 18px 0 10px;
+                        }
+                        p:last-of-type {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
